@@ -1,41 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday, Yune🎂!!</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="container">
-    <h1>🎉 Someone has a birthday ayieeeee! 🎉</h1>
-    <button onclick="showMessage()">Click to Reveal</button>
-    
-    <div id="message" class="hidden">
-      <h2>🎂 Happy Birthday ateq! 🎈</h2>  
-    
-    <div class="message1">
-      <p>Happy Birthday sa pinaka-makulit, pinaka-maingay, at love love kong bff forever!
-        First, gusto ko lang mag thank you sa walang sawang pakikinig sa mga walang kwentang rants, 
-        sa tawa nating walang katapusan lalo na rin sa mga away hahaha, 
-        at syempre sa mga araw na ikaw lang ang nakakaintindi sa ugali na meron ako.</p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Glowing Plant</title>
+    </head>
+    <body class="not-loaded">
+        
+        <div class="night"></div>
+        <div class="flowers">
+            <div class="flower flower--1">
+                <div class="flower__leafs flower__leafs--1">
+                    <div class="flower__leafs flower__leafs--1"></div>
+                    <div class="flower__leafs flower__leafs--2"></div>
+                    <div class="flower__leafs flower__leafs--3"></div>
+                    <div class="flower__leafs flower__leafs--4"></div>
 
-    <div class="message2">
-        <p>Hindi ko man palaging nasasabi paminsan minsan, pero be sobra-sobrang thankful ako na ikaw yung naging bestfriend ko, 
-        almost 3 years na tayong mag bestfriend ah!.</p>
-    </div>
+                    <div class="flower__white-circle"></div>
 
-    <div class="message3">
-        <p>So sana sa araw mo ngayon, maramdaman mo kung gaano ka kahalaga sa mga taong nagmamahal sa'yo — lalo na ako! ayiee iiyak na yan.
-        So ito na nga! Ang wish ko lang para sa'yo ay puro happiness and joy, good health of course, at syempre matupad yung gma pangarap mo!.
-        Always continue what you do or did? chares, basta always choice yourself first ah! lagi mong unahing mahalin si self! 
-        Yun lang, I Love you Yuneeeeeee!🎉💖</p>
-    </div>
+                    <div class="flower__light flower__light--1"></div>
+                    <div class="flower__light flower__light--2"></div>
+                    <div class="flower__light flower__light--3"></div>
+                    <div class="flower__light flower__light--4"></div>
+                    <div class="flower__light flower__light--5"></div>
+                    <div class="flower__light flower__light--6"></div>
+                    <div class="flower__light flower__light--7"></div>
+                    <div class="flower__light flower__light--8"></div>
 
-    <canvas id="confetti"></canvas>
-  </div>
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__light--1"></div>
+                <div class="flower__line__leaf flower__light--2"></div>
+                <div class="flower__line__leaf flower__light--3"></div>
+                <div class="flower__line__leaf flower__light--4"></div>
+                <div class="flower__line__leaf flower__light--5"></div>
+                <div class="flower__line__leaf flower__light--6"></div>
+            </div>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="flower flower--2">
+            <div class="flower__leafs flower__leafs--2">
+                <div class="flower__leafs flower__leafs--1"></div>
+                <div class="flower__leafs flower__leafs--2"></div>
+                <div class="flower__leafs flower__leafs--3"></div>
+                <div class="flower__leafs flower__leafs--4"></div>
+                <div class="flower__white-circle"></div>
+
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
+
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__light--1"></div>
+                <div class="flower__line__leaf flower__light--2"></div>
+                <div class="flower__line__leaf flower__light--3"></div>
+                <div class="flower__line__leaf flower__light--4"></div>
+            </div>
+        </div>
+
+        <div class="flower flower--3">
+            <div class="flower__leafs flower__leafs--3">
+                <div class="flower__leafs flower__leafs--1"></div>
+                <div class="flower__leafs flower__leafs--2"></div>
+                <div class="flower__leafs flower__leafs--3"></div>
+                <div class="flower__leafs flower__leafs--4"></div>
+                <div class="flower__white-circle"></div>
+
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
+
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__light--1"></div>
+                <div class="flower__line__leaf flower__light--2"></div>
+                <div class="flower__line__leaf flower__light--3"></div>
+                <div class="flower__line__leaf flower__light--4"></div>
+            </div>
+        </div>
+
+        <div class="grow-ans" style="--d:1.2s">
+            <div class="flower__g-long">
+                <div class="flower__g-long__top"></div>
+                <div class="flower__g-long__bottom"></div>
+            </div>
+        </div>
+
+        <div class="growing-grass">
+            <div class="flower__grass flower__grass-1">
+                <div class="flower__grass--top"></div>
+                <div class="flower__grass--bottom"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+                <div class="flower__grass_overlay"></div>
+            </div>
+        </div>
+
+        <div class="growing-grass">
+            <div class="flower__grass flower__grass--2">
+                <div class="flower__grass--top"></div>
+                <div class="flower__grass--bottom"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+                <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+                <div class="flower__grass__overlay"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
